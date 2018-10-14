@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>who-wants-to-be-a-millionaire</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+</head>
+<body>
+<!-- timer --> 
+<div id="count">Start</div>
+
+<!-- game interface -->
+<div class="quiz-container">
+  <div id="quiz"></div>
+</div>
+<button id="previous">Previous Question</button>
+<button id="next">Next Question</button>
+<button id="submit">Submit Quiz</button>
+<div id="results"></div>
+
+
+
+<!-- game interface2 -->
+
+<div class="main-body">
+
+		<h1>Who wants to be a millionaire?</h1>
+		<br>
+	
+		<p id= "bank">£0</p>
+		<br>
+		
+		<h2 id= "question-number">Question</h2>
+		<p id= "question"></p>
+		<br>
+		
+		<ul id= "answers">
+			<li id ="option"><input type="radio" id="opt"/><span id="one"></span></li>
+			<li id="option"><input type="radio" id="opt"/><span id="two"></span></li>
+			<li id="option"><input type="radio" id="opt"/><span id="three"></span></li>
+			<li id="option"><input type="radio" id="opt"/><span id="four"></span></li>
+		</ul>
+		<br>
+		
+		 	<button id= "restart">playAgain</button>
+		 	<button id= "next" onclick="answerQuestion()">NextQuestion</button>	
+		<div id= "lifeline">
+			<button id= "fifty-fifty">50/50</button>
+			<button id= "free-pass">Free Pass</button>
+		</div>
+
+
+
+ 
+
+
+
+<script src="js/index.js"></script>
+</body>
+</html>
