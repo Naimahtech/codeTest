@@ -63,22 +63,15 @@ var questions = [
         var questionNumber = document.getElementById('question-number');
 	    var questionBox = document.getElementById('question');
 	    var next  = document.getElementById('next');
-<<<<<<< HEAD
 	    var one = document.getElementById('one');
-=======
-	   var one = document.getElementById('one');
->>>>>>> cfc210094ff9d7ae2772a904a93099085c273ce0
 		var two = document.getElementById('two');
 		var three = document.getElementById('three');
 		var four = document.getElementById('four');
 		var freePass = document.getElementById('free-pass');
 		var begin = document.getElementById('begin');
         var main = document.getElementById('main');
-<<<<<<< HEAD
         var bank = document.getElementById('bank');
         var counter = document.getElementById('count');
-=======
->>>>>>> cfc210094ff9d7ae2772a904a93099085c273ce0
 
 		function askQuestion(counterNum) {
          var q = questions[counterNum];
@@ -92,7 +85,6 @@ var questions = [
 		};
 		 
 
-<<<<<<< HEAD
 function  nextQuestion() {
 
 			// find selected answer
@@ -132,55 +124,6 @@ function  nextQuestion() {
  askQuestion(current); 
 
 
-=======
-		function  nextQuestion() {
-			// body...
-			// find selected answer
-       
-      var selectedOption  = document.querySelector('input[type=radio]:checked');
-      if (!selectedOption) {
-        alert('please, select an option');
-      }
-
-      var userAnswer =  selectedOption.value;
-        correctAnswer = questions[current].answer;
-       
-
-      if ( correctAnswer == userAnswer ) {
-      	 award += 100000;
-      	 document.getElementById('bank').innerHTML = "your balance is:" + award; 
-         current++;
-      }
-      if (correctAnswer !== userAnswer) {
-      	window.alert("Sorry, you got the answer wrong and you've lost your money. " + "The correct answer is option :" +correctAnswer  );
-      	main.style.visibility = "hidden";
-      	begin.style.visibility = "visible";
-        bank.innerHTML ="Balance : #0"  ;
-        return;
-      }
-      selectedOption.checked = false;
-		current++;
-		if (current == total) {
-        bank.html("Balance : #1m");
-			// We don't want to see a question so outputting a message instead
-			questionBox.innerHTML ="You're a millionaire" ;
-			// We don't want to see any answers here
-			//answers.hide();
-			// We don't want to see a reset button here
-			//restart.show();
-			// We don't want to see the question number here
-			questionNumber.style.visibility = "hidden";
-			//Hide the lifeline buttons
-			lifeLine.style.visibility = "hidden";
-		}
-
-         askQuestion(current); 
-		}
-
-
- askQuestion(current);
-
->>>>>>> cfc210094ff9d7ae2772a904a93099085c273ce0
  function pass() {
  	current++;
  	askQuestion(current); 
@@ -199,9 +142,5 @@ function  nextQuestion() {
  	four.style.visibility = "hidden";
     document.getElementById('fifty-fifty').style.visibility = "hidden";
 
-<<<<<<< HEAD
  }
  
-=======
- }
->>>>>>> cfc210094ff9d7ae2772a904a93099085c273ce0
