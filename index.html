@@ -6,16 +6,10 @@
 </head>
 <body>
 <!-- timer --> 
-<div id="count">Start</div>
+
 
 <!-- game interface -->
-<div class="quiz-container">
-  <div id="quiz"></div>
-</div>
-<button id="previous">Previous Question</button>
-<button id="next">Next Question</button>
-<button id="submit">Submit Quiz</button>
-<div id="results"></div>
+ 
 
 
 
@@ -24,36 +18,43 @@
 <div class="main-body">
 
 		<h1>Who wants to be a millionaire?</h1>
+        <h3>you have 150 seconds to complete the questions.</h3>
 		<br>
-	
-		<p id= "bank">£0</p>
+		<div id="count">Start</div>
+	    <br>
+		<p id= "bank">#0</p>
 		<br>
-		
+		<div id="main">
 		<h2 id= "question-number">Question</h2>
 		<p id= "question"></p>
 		<br>
 		
-		<ul id= "answers">
+		 <ul>
 			<li id ="option"><input type="radio" id="opt"/><span id="one"></span></li>
 			<li id="option"><input type="radio" id="opt"/><span id="two"></span></li>
 			<li id="option"><input type="radio" id="opt"/><span id="three"></span></li>
 			<li id="option"><input type="radio" id="opt"/><span id="four"></span></li>
-		</ul>
+		 </ul>
 		<br>
 		
-		 	<button id= "restart">playAgain</button>
-		 	<button id= "next" onclick="answerQuestion()">NextQuestion</button>	
+		 	
+		 	<button id= "next" onclick="nextQuestion()">NextQuestion</button>	
 		<div id= "lifeline">
-			<button id= "fifty-fifty">50/50</button>
-			<button id= "free-pass">Free Pass</button>
-		</div>
+			<button id= "fifty-fifty" onclick="fifty()">50/50</button>
+			<button id= "free-pass" onclick="pass()">Free Pass</button>
 
+		</div>
+		<button id= "begin" onclick="again()">playAgain</button>
+</div> 
+
+</div>
 
 
  
 
 
-
-<script src="js/index.js"></script>
+<!-- 
+<script src="js/index.js"></script>game interface2 -->
+<script src="js/new.js"></script>
 </body>
 </html>
